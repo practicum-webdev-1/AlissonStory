@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Permanent Marker";
+  src: url(./fonts/PermanentMarker.ttf) format("truetype"),
+    url(./fonts/PermanentMarker.woff) format("woff");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: "Inter", sans-serif;
+  background: #eeeeee;
+}
+
+.header {
+  height: 100vh;
+  background-image: url("images/alisson.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  box-shadow: 4px 4px 5px gray;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.header__title {
+  font-size: 80px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500px;
+  margin: auto;
+  text-align: right;
+  font-family: "Permanent Marker", cursive;
+  line-height: 140px;
+  max-width: 1240px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 790px;
+  margin: 100px auto 50px;
+}
+
+.card {
+  width: 350px;
+  margin-bottom: 60px;
+  padding: 45px 45px 70px;
+  box-shadow: 4px 4px 5px gray;
+  background-color: #dcd9d4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(
+      at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+  background-blend-mode: soft-light, screen;
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: "Permanent Marker", cursive;
+}
+.card__text {
+  font-size: 16px;
+}
+.card__image {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.footer {
+  height: 300px;
+  background-color: #dcd9d4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(
+      at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+  background-blend-mode: soft-light, screen;
+  display: flex;
+}
+.signature {
+  align-self: center;
+}
+
+.footer-author {
+  font-size: 24px;
+  color: dimgray;
+  margin: auto;
+}
